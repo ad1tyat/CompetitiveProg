@@ -3,7 +3,7 @@ using namespace std;
 
 
 /********************************************************************/
-#define M1 1000000007
+#define M1 1000000007	//Standard primes used in modulo operations
 #define M2 998244353
 #define ll long long
 #define pll pair<ll,ll>
@@ -26,17 +26,17 @@ using namespace std;
 #define yes cout<<"Yes"<<endl
 #define no cout<<"No"<<endl
 
-void FAST() {
+void FAST() {	//FAST Input Output, DONT use both scnaf,printf / cin,cout , Use any ONE system
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 	cout.tie(0);
 }
-ll gcd(ll x, ll y) {
+ll gcd(ll x, ll y) {	//returns gcd of two long long ints
 	if (x == 0) return y;
 	return gcd(y % x, x);
 }
 
-ll powM(ll x, ll y, ll m) {
+ll powM(ll x, ll y, ll m) {	//returns (a^b)%m ( ^ is exponent )
 	ll ans = 1, r = 1;
 	x %= m;
 	while (r > 0 && r <= y)
@@ -53,7 +53,7 @@ ll powM(ll x, ll y, ll m) {
 	return ans;
 }
 
-map<long long, long long> factorize(long long n) {
+map<long long, long long> factorize(long long n) {	//returns map containing factor and multiplicity, Eg: 60 = {{2,2},{3,1},{5,1}}
 	map<long long, long long> ans;
 	for (long long i = 2; i * i <= n; i++) {
 		while (n % i == 0) {
@@ -70,9 +70,8 @@ map<long long, long long> factorize(long long n) {
 /* **********END OF TEMPLATE*********** */
 int main() {
 	FAST();
-
 	CASE(t) {
-
+		//Solve each testcase here
 	}
 
 	return 0;
