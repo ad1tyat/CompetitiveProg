@@ -26,7 +26,7 @@ using namespace std;
 #define yes cout<<"Yes"<<endl
 #define no cout<<"No"<<endl
 
-void FAST() {	//FAST Input Output, DONT use both scnaf,printf / cin,cout , Use any ONE system
+void FAST() {	//FAST Input Output, DONT use both scanf,printf / cin,cout , Use any ONE system
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 	cout.tie(0);
